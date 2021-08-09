@@ -32,7 +32,7 @@ for i in range(0,len(sheetlist)):
 
 # 전기에너지
     value1 = 0 # 메인 전기에너지
-    for x in range(4, 26):
+    for x in range(4, 35):
         energyvalue1 = new_ws.cell(row=x, column=4).value
         #print(type(energyvalue1))
         if type(energyvalue1) == int:
@@ -57,7 +57,7 @@ for i in range(0,len(sheetlist)):
 
 # 가스에너지
     value3 = 0 # 메인 가스에너지
-    for x in range(4, 26):
+    for x in range(4, 35):
         energyvalue3 = new_ws.cell(row=x, column=8).value
         #print(type(energyvalue3))
         if type(energyvalue3) == int:
@@ -82,7 +82,7 @@ for i in range(0,len(sheetlist)):
 
 # 상수도
     value5 = 0 # 메인 상수도
-    for x in range(4, 26):
+    for x in range(4, 35):
         energyvalue5 = new_ws.cell(row=x, column=12).value
         if type(energyvalue5) == int:
             value5 += energyvalue5
